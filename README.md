@@ -1,10 +1,10 @@
 ## PizzaCatcher
 
-PizzaCatcher is a simple but fast-paced browser game built using p5.js on Replit. The goal is to catch falling pizza toppings on your moving plate before the timer runs out. Each topping gives you points, and some are worth more than others. If you manage to catch enough toppings before time runs out, you’ll build the “perfect pizza.”
+PizzaCatcher is a simple but fun browser game I coded using p5play and Javascript on Replit. The goal is to catch falling pizza toppings on your moving pizza base before the timer (of 30 seconds) runs out. Each topping gives you points and some are worth more than others. If you manage to catch enough toppings before time runs out, you will build the “perfect pizza”.
 
 ### What the Project Is and What It Does
 
-PizzaCatcher is an arcade-style reaction game where the player controls a pizza base (the catcher) using the left and right arrow keys. From the top of the screen, different toppings fall down at random positions. The player must move the catcher to collect them before they hit the ground.
+PizzaCatcher is reaction game where the player controls a pizza base (the catcher) using the left and right arrow keys. From the top of the screen, different toppings fall down at random positions. The player must move the catcher to collect them before they hit the ground.
 
 Each topping gives you points:
 
@@ -18,33 +18,31 @@ The goal is simple: catch as many toppings as possible before time runs out, and
 
 ### Why I Made This Project
 
-I created PizzaCatcher because I wanted to make something fun, visual, and interactive without being overly complicated. I’ve always enjoyed quick, reaction-based games where you can instantly see the results of your actions, so I wanted to make my own version using p5.js.
+I have always enjoyed quick, reaction-based games... so I wanted to make my own version using p5.js! I wanted to make something fun and interactive without being overly complicated.
 
-I was also interested in learning more about game loops, state management, and collision detection. p5.js seemed like the right place to start since it’s beginner-friendly but still flexible enough to make something polished.
+I was also interested in learning more about game loops and collision detection. p5Play  was  the right place to start since it’s beginner-friendly but still flexible enough to make something polished.
 
-On top of that, I thought a pizza theme would make it more lighthearted and fun. Everyone knows pizza, and catching toppings felt like a playful twist that would make the project stand out.
+PLus, I thought a pizza theme would make it way more interesting and would stand out!! 
 
 ###  How I Made It
 
-This project was built entirely in p5.js using the p5.play library for sprite handling and collisions.
+I built PizzaCatcher entirely in p5.js, using the p5.play library to handle sprites and collisions. Here’s the gist of what I did:
 
-*Key steps in development:
-
-- Game setup and sprites: I created sprites for the catcher and the falling toppings. The catcher is controlled using the left and right arrow keys. The toppings (tomato, pepperoni, and cheese) fall from random positions at the top of the screen.
+- Game setup and sprites: I created sprites for the catcher and the falling toppings (using images I found on google). The catcher is controlled using the left and right arrow keys. The toppings (tomato, pepperoni, and cheese) fall from random positions at the top of the screen.
 
 - Scoring system: Each topping has a score value. Cheese is a special case with a higher bonus value.
 
 - Timer and states: I set up different game states ("start", "play", and "end") so the player can start the game, play it, and then see a summary when it’s over.
 
-- Visual feedback: I added confetti system that triggers when toppings are captured or missed.
+- Visual Ideas: I added a confetti system that triggers when toppings are caught (or when the cheese topping is caught!).
 
-- Restart logic: When the game ends, the player can click to restart and try again without having to refresh the page.
+- Restart: When the game ends, the player can click to restart and try again without having to refresh the page :).
 
 ###  What I Struggled With
 
 I ran into a few challenges while building this game:
 
-- Collision detection: Getting the falling toppings to consistently register as “caught” when they hit the plate was harder than expected. I had to fine-tune the collider shape and make sure the sprite boundaries matched the visible images.
+- Collision detection: Getting the falling toppings to consistently register as “caught” when they hit the plate was harder than expected. I had to ajust the collider shape multiple times and make sure the sprite boundaries matched the visible images.
 
 - Performance with confetti: My first version of the confetti effect caused lag because it spawned too many particles. I optimized it by reducing the number of confetti pieces and limiting their lifetime.
 
@@ -52,15 +50,12 @@ I ran into a few challenges while building this game:
 
 ### What I Learned
 
-This project helped me understand a lot more about how interactive games are structured. I learned:
+This project helped me understand a lot more about how games are structured. I learned:
 
-- How to use sprites and detect collisions in p5.js.
-- How to manage multiple game states and transitions between them.
-- How to implement timed events and countdowns.
-- How small visual effects (like messages and confetti) make gameplay more satisfying.
-- How to write cleaner, modular code for interactive sketches.
-
-I also learned that even small games benefit from good planning and structure. Features like score tracking, a restart button, and visual feedback all make the game feel more complete and intentional.
+- How to use sprites and detect motion in p5.js.
+- How to manage multiple game states and create transitions between them.
+- How to add in time featues and countdowns.
+- How small visual effects (like messages and confetti) make gameplay so more satisfying! 
 
 ### How to Play
 
@@ -74,7 +69,7 @@ I also learned that even small games benefit from good planning and structure. F
 
 ### Possible Improvements
 
-If I continue working on PizzaCatcher, I’d like to add a few more features:
+If I continue working on PizzaCatcher, I would like to add:
 - More topping types (like mushrooms, olives, or onions).
 - Negative items that lower your score if caught.
 - Background music and sound effects.
@@ -83,7 +78,7 @@ If I continue working on PizzaCatcher, I’d like to add a few more features:
 
 ### Closing Thoughts
 
-PizzaCatcher started as a small experiment but turned into a complete and replayable game. It taught me a lot about how games handle timing, collisions, scoring, and feedback. The project is simple, but it feels rewarding to play, and I’m proud of how much I was able to learn and polish in a short time.
+PizzaCatcher taught me a lot about how games handle motion. The project is simple, but it feels satufying to play and I am quite proud of how much I was able to learn through p5play Libraries in a short time.
 
 ## File Overview
 
