@@ -101,3 +101,8 @@ That's this file.
 
 This CSS file generally contains styling rules for the content like colors and fonts but it is not used for this game as the style is embedded in the script.js file itself.  
 
+
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
+
+This project had been submitted to Athena Award (Kudos to Girls Who Code for helping me throughout the process!). To know more, click on the badge above!
+
