@@ -82,23 +82,23 @@ PizzaCatcher taught me a lot about how games handle motion. The project is simpl
 
 ## File Overview
 
-### ← script.js
+### script.js
 
-This containts the avaScript code for the game.
+This containts the JavaScript code for the game.
 
-### ← assets
+### assets
 
 This folder contains images of Pizza toppings
 
-### ← index.html
+### index.html
 
 This HTML file includes all the dependent files like java scripts
 
-### ← README.md
+### README.md
 
 That's this file.   
 
-### ← style.css
+### style.css
 
 This CSS file generally contains styling rules for the content like colors and fonts but it is not used for this game as the style is embedded in the script.js file itself.  
 
