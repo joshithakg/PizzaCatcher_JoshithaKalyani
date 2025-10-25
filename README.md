@@ -8,8 +8,7 @@ PizzaCatcher is reaction game where the player controls a pizza base (the catche
 
 Each topping gives you points:
 
-- Tomato = +1 point
-- Pepperoni = +2 points
+- Tomato and Pepporoni = +1 point
 - Cheese = +3 points (bonus item, appears rarely)
 
 There is a timer and when the time ends it displays the player’s final score along with an message.
