@@ -92,9 +92,7 @@ function caughtOne() {
   } else {
     score++; 
     combo++;
-    let now = millis();
-    if (now - lastCatchTime < 1200) score += 1;
-    lastCatchTime = now;
+    lastCatchTime = millis();
 
     messages.push({ text: combo >= 3 ? "🔥 Combo!" : "Nice!", x: catcher.x, y: catcher.y-50, color: color(0,200,0), life: 50 });
 
@@ -122,7 +120,7 @@ function missedOne() {
   if (fallingObject) {
     fallingObject.y = 0;
     fallingObject.x = random(80, 320);
-    fallingObject.vel.y = random(1.2, 2.0); 
+    fallingObject.vel.y = random(3.5, 5.0); 
     fallingObject.vel.x = 0;                
     assignRandomFood(fallingObject);
     fallingObject.visible = true;
@@ -240,7 +238,7 @@ function draw() {
     catcher.x = constrain(catcher.x, 50, 350);
 
     if (fallingObject) {
-      fallingObject.vel.y += 0.03;
+      fallingObject.vel.y += 0.06;
 
       if(fallingObject.collides(catcher)) 
         caughtOne();
@@ -267,7 +265,7 @@ function draw() {
     if (specialWin) 
       endScreen("AMAZING! 🎉", "Perfect pizza achieved!");
     else 
-      endScreen(score >= 10 ? "YOU WIN!" : "GAME OVER", score >= 10 ? "Perfect pizza achieved!" : "Your pizza was undercooked 😢");
+      endScreen(score >= 10 ? "YOU WIN!" : "GAME OVER", score >= 10 ? "Perfect pizza achieved!" : "Toppings are all over the place...");
   }
 }
 
